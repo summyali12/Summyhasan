@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Dairy Royal Ice Cream – Premium Quality Ice Cream Catering for Weddings, Birthday Parties, Family Functions, Engagement Ceremonies & All Get-Togethers in Kairana, Shamli. Contact: 8218269740" />
+  <meta property="og:title" content="Dairy Royal Ice Cream – Premium Quality" />
+  <meta property="og:description"
+    content="Where Every Celebration Gets a Royal Touch of Sweetness. Ice cream catering for all occasions." />
+  <meta name="theme-color" content="#e91e8c" />
+  <title>Dairy Royal Ice Cream – Premium Quality</title>
+
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;500;600;700;800&family=Great+Vibes&display=swap"
+    rel="stylesheet" />
+
+  <!-- GitHub Pages base path fix: ensures all relative paths resolve correctly -->
+  <base href="./">
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+  <!-- ===== FLOATING PARTICLES CANVAS ===== -->
+  <canvas id="particleCanvas"></canvas>
+
+  <!-- ===== HEADER / NAV ===== -->
+  <header id="header">
+    <nav class="navbar" id="navbar">
+      <div class="nav-logo">
+        <img src="images/logo-crown.png" alt="Dairy Royal Crown Logo" class="logo-crown-img" />
+        <div class="logo-text">
+          <span class="logo-title">Dairy Royal</span>
+          <span class="logo-sub">Ice Cream</span>
+        </div>
+      </div>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#flavors" class="nav-link">Flavors</a></li>
+        <li><a href="#services" class="nav-link">Services</a></li>
+        <li><a href="#gallery" class="nav-link">Gallery</a></li>
+        <li><a href="#testimonials" class="nav-link">Reviews</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+        <li><a href="#order" class="nav-link btn-order">Order Now</a></li>
+      </ul>
+
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section class="hero" id="home">
+    <div class="hero-bg-gradient"></div>
+
+    <!-- Floating antigravity ice creams -->
+    <div class="float-items" aria-hidden="true">
+      <div class="float-item fi-1">🍦</div>
+      <div class="float-item fi-2">🍨</div>
+      <div class="float-item fi-3">🍧</div>
+      <div class="float-item fi-4">🍡</div>
+      <div class="float-item fi-5">🍓</div>
+      <div class="float-item fi-6">🍫</div>
+      <div class="float-item fi-7">⭐</div>
+      <div class="float-item fi-8">✨</div>
+      <div class="float-item fi-9">🌸</div>
+      <div class="float-item fi-10">🍦</div>
+      <div class="float-item fi-11">💎</div>
+      <div class="float-item fi-12">🍒</div>
+    </div>
+
+    <div class="hero-content">
+      <div class="hero-badge reveal-up">✦ Premium Quality Since Inception ✦</div>
+      <h1 class="hero-title reveal-up">
+        <span class="title-big">Dairy Royal</span>
+        <span class="title-script">Ice Cream</span>
+      </h1>
+      <p class="hero-tagline reveal-up">Where Every Celebration Gets a <strong>Royal Touch of Sweetness</strong></p>
+      <p class="hero-sub reveal-up">Weddings • Birthday Parties • Engagements • Family Functions • Get-Togethers</p>
+      <div class="hero-cta reveal-up">
+        <a href="#order" class="btn btn-primary pulse-btn">
+          <span>🍦 Order Now</span>
+        </a>
+        <a href="#services" class="btn btn-outline">
+          <span>Explore Services</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- Scroll indicator -->
+    <div class="scroll-indicator" aria-hidden="true">
+      <div class="scroll-dot"></div>
+    </div>
+  </section>
+
+  <!-- ===== MARQUEE STRIP ===== -->
+  <div class="marquee-strip">
+    <div class="marquee-track">
+      <span>🍦 Strawberry</span>
+      <span>🍫 Choco Crunch</span>
+      <span>🥜 Kaju Premium</span>
+      <span>🍦 Belgium Chocolate</span>
+      <span>🍓 Mixed Fruit</span>
+      <span>🥭 Mango Delight</span>
+      <span>🍬 Butterscotch</span>
+      <span>🍵 Pista Royal</span>
+      <span>🍦 Strawberry</span>
+      <span>🍫 Choco Crunch</span>
+      <span>🥜 Kaju Premium</span>
+      <span>🍦 Belgium Chocolate</span>
+      <span>🍓 Mixed Fruit</span>
+      <span>🥭 Mango Delight</span>
+      <span>🍬 Butterscotch</span>
+      <span>🍵 Pista Royal</span>
+    </div>
+  </div>
+
+  <!-- ===== ABOUT SECTION ===== -->
+  <section class="section about" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-visual reveal-left">
+          <div class="about-card-stack">
+            <div class="about-img-wrapper">
+              <img src="images/assistant.png" alt="Dairy Royal Assistant" loading="lazy" />
+            </div>
+            <div class="about-badge-card">
+              <span class="badge-num">100%</span>
+              <span class="badge-text">Pure & Fresh</span>
+            </div>
+            <div class="about-float-icon">🏆</div>
+          </div>
+        </div>
+        <div class="about-content reveal-right">
+          <div class="section-label">Our Story</div>
+          <h2 class="section-title">The Royal Legacy of <br /><span class="text-gradient">Premium Ice Cream</span></h2>
+          <p class="about-para">Dairy Royal Ice Cream was founded with a singular vision: to bring the finest, most
+            indulgent ice cream experiences to every celebration. Under the leadership of our founder <strong>Zahid
+              Hasan</strong>, we have become the most trusted name for premium ice cream catering in Kairana and beyond.
+          </p>
+          <p class="about-para">Our assistant manager <strong>Sumaiyya</strong> ensures that every event — whether a
+            grand wedding or an intimate birthday — receives the same royal treatment and impeccable service our
+            customers love.</p>
+          <div class="about-stats">
+            <div class="stat-card">
+              <span class="stat-num">500+</span>
+              <span class="stat-label">Events Served</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-num">20+</span>
+              <span class="stat-label">Flavors</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-num">1000+</span>
+              <span class="stat-label">Happy Guests</span>
+            </div>
+          </div>
+          <div class="about-team">
+            <div class="team-member">
+              <div class="team-avatar">ZH</div>
+              <div>
+                <strong>Zahid Hasan</strong>
+                <span>Founder &amp; CEO</span>
+              </div>
+            </div>
+            <div class="team-member">
+              <div class="team-avatar sm">SU</div>
+              <div>
+                <strong>Sumaiyya</strong>
+                <span>Assistant Manager</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FLAVORS SECTION ===== -->
+  <section class="section flavors" id="flavors">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <div class="section-label">Our Signature</div>
+        <h2 class="section-title">Premium <span class="text-gradient">Flavors</span></h2>
+        <p class="section-desc">Crafted with the finest ingredients – each scoop is a moment of pure royal indulgence
+        </p>
+      </div>
+      <div class="flavors-grid">
+        <div class="flavor-card reveal-up" style="--delay:0s">
+          <div class="flavor-img-wrap">
+            <img src="images/strawberry-cone.jpg" alt="Strawberry Ice Cream Cone" loading="lazy" />
+            <div class="flavor-overlay">🍓 Strawberry</div>
+          </div>
+          <div class="flavor-info">
+            <h3>Strawberry Delight</h3>
+            <p>Luscious fresh strawberry ice cream swirled into our signature cone – a fan favourite for all
+              celebrations.</p>
+            <div class="flavor-tags"><span>Sweet</span><span>Fruity</span><span>Creamy</span></div>
+          </div>
+        </div>
+        <div class="flavor-card reveal-up" style="--delay:0.1s">
+          <div class="flavor-img-wrap">
+            <img src="images/choco-crunch.jpg" alt="Choco Crunch Ice Cream" loading="lazy" />
+            <div class="flavor-overlay">🍫 Choco Crunch</div>
+          </div>
+          <div class="flavor-info">
+            <h3>Choco Crunch</h3>
+            <p>Rich dark chocolate shell with a creamy centre – the ultimate indulgence for every chocolate lover.</p>
+            <div class="flavor-tags"><span>Rich</span><span>Crunchy</span><span>Indulgent</span></div>
+          </div>
+        </div>
+        <div class="flavor-card reveal-up" style="--delay:0.2s">
+          <div class="flavor-img-wrap">
+            <img src="images/premium-almond.jpg" alt="Premium Almond Ice Cream" loading="lazy" />
+            <div class="flavor-overlay">🥜 Kaju Premium</div>
+          </div>
+          <div class="flavor-info">
+            <h3>Kaju Premium</h3>
+            <p>Silky smooth premium ice cream topped with cashews and almonds – the choice of royalty.</p>
+            <div class="flavor-tags"><span>Nutty</span><span>Luxurious</span><span>Silky</span></div>
+          </div>
+        </div>
+        <div class="flavor-card reveal-up" style="--delay:0.3s">
+          <div class="flavor-img-wrap">
+            <img src="images/belgium-chocolate.jpg" alt="Belgium Chocolate Ice Cream" loading="lazy" />
+            <div class="flavor-overlay">🍦 Belgium Chocolate</div>
+          </div>
+          <div class="flavor-info">
+            <h3>Belgium Chocolate</h3>
+            <p>Deep, velvety Belgium chocolate ice cream – the soft silky experience that melts hearts and moments.</p>
+            <div class="flavor-tags"><span>Velvety</span><span>Premium</span><span>Divine</span></div>
+          </div>
+        </div>
+        <div class="flavor-card reveal-up" style="--delay:0.4s">
+          <div class="flavor-img-wrap">
+            <img src="images/chocolate-cone.jpg" alt="Chocolate Cone Ice Cream" loading="lazy" />
+            <div class="flavor-overlay">🍫 Chocolate Cone</div>
+          </div>
+          <div class="flavor-info">
+            <h3>Chocolate Royale</h3>
+            <p>Decadent chocolate ice cream in a crispy wafer cone with nutty bits – perfection in every bite.</p>
+            <div class="flavor-tags"><span>Classic</span><span>Crunchy</span><span>Royal</span></div>
+          </div>
+        </div>
+        <div class="flavor-card reveal-up special-card" style="--delay:0.5s">
+          <div class="flavor-img-wrap special-img">
+            <div class="special-content">
+              <span class="special-emoji">🌟</span>
+              <h3>Custom Flavors</h3>
+              <p>Have a special flavor in mind? We create custom ice cream experiences tailored to your event!</p>
+              <a href="#contact" class="btn btn-primary btn-sm">Contact Us</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SERVICES SECTION ===== -->
+  <section class="section services" id="services">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <div class="section-label">What We Offer</div>
+        <h2 class="section-title">Ice Cream Catering for <span class="text-gradient">Every Occasion</span></h2>
+        <p class="section-desc">We bring the royal ice cream experience directly to your special event</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card reveal-up" style="--delay:0s">
+          <div class="service-icon">💍</div>
+          <h3>Wedding Ceremonies</h3>
+          <p>Make your wedding day sweeter with our premium ice cream catering. Custom flavors, elegant presentation,
+            and flawless service for your dream wedding.</p>
+          <ul class="service-features">
+            <li>✓ Custom wedding themes</li>
+            <li>✓ Elegant display setups</li>
+            <li>✓ Unlimited flavors</li>
+            <li>✓ Professional staff</li>
+          </ul>
+          <a href="#order" class="service-link">Book Now →</a>
+        </div>
+        <div class="service-card reveal-up" style="--delay:0.1s">
+          <div class="service-icon">🎂</div>
+          <h3>Birthday Parties</h3>
+          <p>Make every birthday unforgettable! We create fun, colorful ice cream experiences that kids and adults
+            equally love.</p>
+          <ul class="service-features">
+            <li>✓ Fun themed setups</li>
+            <li>✓ Birthday specials</li>
+            <li>✓ All age groups</li>
+            <li>✓ Custom cakes &amp; scoops</li>
+          </ul>
+          <a href="#order" class="service-link">Book Now →</a>
+        </div>
+        <div class="service-card reveal-up" style="--delay:0.2s">
+          <div class="service-icon">👨‍👩‍👧‍👦</div>
+          <h3>Family Functions</h3>
+          <p>Large gatherings deserve large flavour variety. Our family function packages are designed for big
+            celebrations with diverse tastes.</p>
+          <ul class="service-features">
+            <li>✓ Bulk packages</li>
+            <li>✓ 20+ flavor options</li>
+            <li>✓ Flexible serving</li>
+            <li>✓ Family pricing</li>
+          </ul>
+          <a href="#order" class="service-link">Book Now →</a>
+        </div>
+        <div class="service-card reveal-up" style="--delay:0.3s">
+          <div class="service-icon">💏</div>
+          <h3>Engagement Ceremonies</h3>
+          <p>Celebrate your love story with our romantic ice cream arrangements. Elegant, sophisticated, and deeply
+            indulgent.</p>
+          <ul class="service-features">
+            <li>✓ Romantic themes</li>
+            <li>✓ Couple specials</li>
+            <li>✓ Elegant décor</li>
+            <li>✓ Premium flavors</li>
+          </ul>
+          <a href="#order" class="service-link">Book Now →</a>
+        </div>
+        <div class="service-card reveal-up" style="--delay:0.4s">
+          <div class="service-icon">🥂</div>
+          <h3>All Get-Togethers</h3>
+          <p>Any reason to celebrate deserves Dairy Royal Ice Cream. We cater to office parties, reunions, festivals,
+            and every social occasion.</p>
+          <ul class="service-features">
+            <li>✓ Any occasion</li>
+            <li>✓ Flexible packages</li>
+            <li>✓ Quick setup</li>
+            <li>✓ All locations</li>
+          </ul>
+          <a href="#order" class="service-link">Book Now →</a>
+        </div>
+        <div class="service-card special-service reveal-up" style="--delay:0.5s">
+          <div class="service-icon">👑</div>
+          <h3>Royal VIP Package</h3>
+          <p>Our most exclusive offering – an all-inclusive premium ice cream experience with custom branding, dedicated
+            staff, and unlimited indulgence.</p>
+          <ul class="service-features">
+            <li>✓ Dedicated team</li>
+            <li>✓ Custom branding</li>
+            <li>✓ All-inclusive</li>
+            <li>✓ VIP treatment</li>
+          </ul>
+          <a href="#order" class="service-link">Enquire Now →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== GALLERY SECTION ===== -->
+  <section class="section gallery" id="gallery">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <div class="section-label">Visual Delight</div>
+        <h2 class="section-title">Our <span class="text-gradient">Gallery</span></h2>
+        <p class="section-desc">A peek into the world of Dairy Royal Ice Cream</p>
+      </div>
+      <div class="gallery-grid">
+        <div class="gallery-item gi-large reveal-up" data-src="images/strawberry-cone.jpg"
+          data-caption="Strawberry Cone – Our signature fruity delight" style="--delay:0s">
+          <img src="images/strawberry-cone.jpg" alt="Strawberry Ice Cream Cone" loading="lazy" />
+          <div class="gallery-overlay"><span>🔍 View</span>
+            <p>Strawberry Cone</p>
+          </div>
+        </div>
+        <div class="gallery-item reveal-up" data-src="images/choco-crunch.jpg"
+          data-caption="Choco Crunch – Rich chocolate on a stick" style="--delay:0.1s">
+          <img src="images/choco-crunch.jpg" alt="Choco Crunch Ice Cream" loading="lazy" />
+          <div class="gallery-overlay"><span>🔍 View</span>
+            <p>Choco Crunch</p>
+          </div>
+        </div>
+        <div class="gallery-item reveal-up" data-src="images/premium-almond.jpg"
+          data-caption="Kaju Premium – The soft silky experience" style="--delay:0.2s">
+          <img src="images/premium-almond.jpg" alt="Premium Kaju Almond Ice Cream" loading="lazy" />
+          <div class="gallery-overlay"><span>🔍 View</span>
+            <p>Kaju Premium</p>
+          </div>
+        </div>
+        <div class="gallery-item gi-large reveal-up" data-src="images/belgium-chocolate.jpg"
+          data-caption="Belgium Chocolate – The ultimate chocolate experience" style="--delay:0.3s">
+          <img src="images/belgium-chocolate.jpg" alt="Belgium Chocolate Ice Cream" loading="lazy" />
+          <div class="gallery-overlay"><span>🔍 View</span>
+            <p>Belgium Chocolate</p>
+          </div>
+        </div>
+        <div class="gallery-item reveal-up" data-src="images/chocolate-cone.jpg"
+          data-caption="Chocolate Royale – Perfection in every bite" style="--delay:0.4s">
+          <img src="images/chocolate-cone.jpg" alt="Chocolate Cone" loading="lazy" />
+          <div class="gallery-overlay"><span>🔍 View</span>
+            <p>Chocolate Royale</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer">
+      <button class="lightbox-close" id="lightboxClose" aria-label="Close">&times;</button>
+      <img class="lightbox-img" id="lightboxImg" src="" alt="Gallery image enlarged" />
+      <p class="lightbox-caption" id="lightboxCaption"></p>
+    </div>
+  </section>
+
+  <!-- ===== TESTIMONIALS SECTION ===== -->
+  <section class="section testimonials" id="testimonials">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <div class="section-label">Happy Customers</div>
+        <h2 class="section-title">What Our <span class="text-gradient">Guests Say</span></h2>
+      </div>
+      <div class="testimonials-grid">
+        <div class="testi-card reveal-up" style="--delay:0s">
+          <div class="testi-quote">"</div>
+          <p class="testi-text">Dairy Royal made our wedding reception absolutely magical! The ice cream setup was
+            stunning and every guest loved the flavors. Zahid bhai is incredible!</p>
+          <div class="testi-stars">⭐⭐⭐⭐⭐</div>
+          <div class="testi-author">
+            <div class="testi-avatar">AR</div>
+            <div>
+              <strong>Aisha Rahman</strong>
+              <span>Wedding Ceremony, Kairana</span>
+            </div>
+          </div>
+        </div>
+        <div class="testi-card reveal-up" style="--delay:0.15s">
+          <div class="testi-quote">"</div>
+          <p class="testi-text">We booked Dairy Royal for my daughter's birthday party and it was a huge hit! The kids
+            went crazy over the flavors. Professional, punctual, and delicious!</p>
+          <div class="testi-stars">⭐⭐⭐⭐⭐</div>
+          <div class="testi-author">
+            <div class="testi-avatar">MK</div>
+            <div>
+              <strong>Mohammad Khan</strong>
+              <span>Birthday Party, Shamli</span>
+            </div>
+          </div>
+        </div>
+        <div class="testi-card reveal-up" style="--delay:0.3s">
+          <div class="testi-quote">"</div>
+          <p class="testi-text">The Belgium Chocolate flavor is out of this world! Dairy Royal catered our family
+            reunion and everybody kept asking for more. Highly recommended!</p>
+          <div class="testi-stars">⭐⭐⭐⭐⭐</div>
+          <div class="testi-author">
+            <div class="testi-avatar">SP</div>
+            <div>
+              <strong>Saira Parveen</strong>
+              <span>Family Function, Muzaffarnagar</span>
+            </div>
+          </div>
+        </div>
+        <div class="testi-card reveal-up" style="--delay:0.45s">
+          <div class="testi-quote">"</div>
+          <p class="testi-text">Our engagement ceremony was elevated to another level with Dairy Royal's Royal VIP
+            package. Sumaiyya ensured every detail was perfect. Thank you!</p>
+          <div class="testi-stars">⭐⭐⭐⭐⭐</div>
+          <div class="testi-author">
+            <div class="testi-avatar">IH</div>
+            <div>
+              <strong>Imran &amp; Hira</strong>
+              <span>Engagement Ceremony, Kairana</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ORDER FORM ===== -->
+  <section class="section order-section" id="order">
+    <div class="container">
+      <div class="order-wrapper">
+        <div class="order-info reveal-left">
+          <div class="section-label">Book Your Event</div>
+          <h2 class="section-title">Order <span class="text-gradient">Dairy Royal</span><br />for Your Celebration</h2>
+          <p class="order-para">Fill in your event details and our team will get back to you within 24 hours with a
+            custom package tailored to your needs.</p>
+          <div class="order-icons">
+            <div class="order-feature">
+              <span>⚡</span>
+              <div>
+                <strong>Fast Response</strong>
+                <p>Within 24 hours</p>
+              </div>
+            </div>
+            <div class="order-feature">
+              <span>🎯</span>
+              <div>
+                <strong>Custom Packages</strong>
+                <p>Tailored to your event</p>
+              </div>
+            </div>
+            <div class="order-feature">
+              <span>✅</span>
+              <div>
+                <strong>Reliable Service</strong>
+                <p>Trusted by 500+ events</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <form class="order-form reveal-right" id="orderForm" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="fname">Full Name *</label>
+              <input type="text" id="fname" name="fname" placeholder="Your full name" required />
+              <span class="form-error" id="fnameError"></span>
+            </div>
+            <div class="form-group">
+              <label for="fphone">Phone Number *</label>
+              <input type="tel" id="fphone" name="fphone" placeholder="e.g. 9876543210" required />
+              <span class="form-error" id="fphoneError"></span>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="femail">Email Address</label>
+            <input type="email" id="femail" name="femail" placeholder="your@email.com" />
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="fevent">Event Type *</label>
+              <select id="fevent" name="fevent" required>
+                <option value="">Select event type</option>
+                <option value="wedding">Wedding Ceremony</option>
+                <option value="birthday">Birthday Party</option>
+                <option value="family">Family Function</option>
+                <option value="engagement">Engagement Ceremony</option>
+                <option value="gettogether">Get-Together</option>
+                <option value="other">Other</option>
+              </select>
+              <span class="form-error" id="feventError"></span>
+            </div>
+            <div class="form-group">
+              <label for="fdate">Event Date *</label>
+              <input type="date" id="fdate" name="fdate" required />
+              <span class="form-error" id="fdateError"></span>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="fguests">Expected Number of Guests *</label>
+            <input type="number" id="fguests" name="fguests" placeholder="e.g. 100" min="10" required />
+            <span class="form-error" id="fguestsError"></span>
+          </div>
+          <div class="form-group">
+            <label for="fnotes">Special Requirements / Notes</label>
+            <textarea id="fnotes" name="fnotes" placeholder="Any special flavors, themes, dietary requirements..."
+              rows="4"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full pulse-btn" id="submitBtn">
+            <span>🍦 Submit Enquiry</span>
+          </button>
+          <div class="form-success" id="formSuccess" hidden>
+            <span>✅</span>
+            <p>Thank you! Your enquiry has been received. We'll contact you within 24 hours.</p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT SECTION ===== -->
+  <section class="section contact" id="contact">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <div class="section-label">Find Us</div>
+        <h2 class="section-title">Get in <span class="text-gradient">Touch</span></h2>
+        <p class="section-desc">We'd love to hear from you and make your next event royal</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-card reveal-up" style="--delay:0s">
+          <div class="contact-icon">📞</div>
+          <h3>Call Us</h3>
+          <a href="tel:8218269740" class="contact-link">8218269740</a>
+          <p>Mon – Sun, 9 AM – 9 PM</p>
+        </div>
+        <div class="contact-card reveal-up" style="--delay:0.1s">
+          <div class="contact-icon">💬</div>
+          <h3>WhatsApp</h3>
+          <a href="https://wa.me/918218269740?text=Hi%20Dairy%20Royal!%20I%20want%20to%20enquire%20about%20ice%20cream%20catering."
+            target="_blank" rel="noopener" class="contact-link">Chat on WhatsApp</a>
+          <p>Instant response guaranteed</p>
+        </div>
+        <div class="contact-card reveal-up" style="--delay:0.2s">
+          <div class="contact-icon">✉️</div>
+          <h3>Email Us</h3>
+          <a href="mailto:sumaiyyazahid84@gmail.com" class="contact-link">sumaiyyazahid84@gmail.com</a>
+          <p>We reply within 24 hours</p>
+        </div>
+        <div class="contact-card reveal-up" style="--delay:0.3s">
+          <div class="contact-icon">📍</div>
+          <h3>Our Location</h3>
+          <p class="contact-link">Behind Police Station,<br />Kairana District, Shamli<br />Uttar Pradesh</p>
+          <a href="https://maps.google.com/?q=Kairana,Shamli,Uttar+Pradesh" target="_blank" rel="noopener"
+            class="map-btn">View on Map →</a>
+        </div>
+      </div>
+
+      <!-- Embedded Map Placeholder -->
+      <div class="map-embed reveal-up">
+        <iframe src="https://maps.google.com/maps?q=Kairana,Shamli,Uttar+Pradesh&output=embed&z=14" width="100%"
+          height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+          title="Dairy Royal Ice Cream Location – Kairana, Shamli">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer-float-items" aria-hidden="true">
+      <span class="ff-1">🍦</span>
+      <span class="ff-2">✨</span>
+      <span class="ff-3">🍧</span>
+      <span class="ff-4">⭐</span>
+      <span class="ff-5">🍒</span>
+    </div>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <img src="images/logo-crown.png" alt="Dairy Royal Crown Logo" class="footer-crown-img" />
+            <div>
+              <strong>Dairy Royal</strong>
+              <span>Ice Cream</span>
+            </div>
+          </div>
+          <p>Premium quality ice cream catering for every celebration. Where every occasion gets a royal touch of
+            sweetness.</p>
+          <div class="footer-social">
+            <a href="https://wa.me/918218269740" target="_blank" rel="noopener" aria-label="WhatsApp"
+              class="social-btn">💬</a>
+            <a href="tel:8218269740" aria-label="Call us" class="social-btn">📞</a>
+            <a href="mailto:sumaiyyazahid84@gmail.com" aria-label="Email us" class="social-btn">✉️</a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#flavors">Flavors</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Our Services</h4>
+          <ul>
+            <li><a href="#services">Wedding Ceremonies</a></li>
+            <li><a href="#services">Birthday Parties</a></li>
+            <li><a href="#services">Family Functions</a></li>
+            <li><a href="#services">Engagement Ceremonies</a></li>
+            <li><a href="#services">All Get-Togethers</a></li>
+            <li><a href="#services">Royal VIP Package</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h4>Contact Info</h4>
+          <div class="footer-contact-item">
+            <span>📞</span>
+            <a href="tel:8218269740">8218269740</a>
+          </div>
+          <div class="footer-contact-item">
+            <span>✉️</span>
+            <a href="mailto:sumaiyyazahid84@gmail.com">sumaiyyazahid84@gmail.com</a>
+          </div>
+          <div class="footer-contact-item">
+            <span>📍</span>
+            <span>Behind Police Station, Kairana, Shamli, U.P.</span>
+          </div>
+          <div class="footer-contact-item">
+            <span>⏰</span>
+            <span>Mon – Sun: 9 AM – 9 PM</span>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Dairy Royal Ice Cream. All Rights Reserved. | Founded by <strong>Zahid Hasan</strong></p>
+        <p class="footer-dev">Designed with ❤️ for Dairy Royal Ice Cream</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== BACK TO TOP ===== -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+  <!-- ===== CHATBASE AI WIDGET ===== -->
+  <div class="chatbot-widget" id="chatbotWidget" aria-label="AI Chat Assistant">
+    <!-- Toggle Button -->
+    <button class="chatbot-toggle" id="chatbotToggle" aria-label="Open AI Chat" title="Chat with us!">
+      <span class="chatbot-toggle-icon" id="chatbotIcon">🤖</span>
+      <span class="chatbot-pulse"></span>
+    </button>
+    <!-- Chat Label -->
+    <div class="chatbot-label" id="chatbotLabel">Ask us anything!</div>
+    <!-- Chat Panel -->
+    <div class="chatbot-panel" id="chatbotPanel" hidden>
+      <div class="chatbot-header">
+        <div class="chatbot-header-info">
+          <span class="chatbot-avatar">🤖</span>
+          <div>
+            <strong>Dairy Royal AI</strong>
+            <span class="chatbot-status">🟢 Online</span>
+          </div>
+        </div>
+        <button class="chatbot-close" id="chatbotClose" aria-label="Close chat">✕</button>
+      </div>
+      <iframe
+        src="https://www.chatbase.co/chatbot-iframe/5BtSA9gQxC5VFBWQxFFJK"
+        width="100%"
+        height="100%"
+        frameborder="0"
+        title="Dairy Royal AI Assistant"
+        loading="lazy"
+      ></iframe>
+    </div>
+  </div>
+
+  <!-- ===== WHATSAPP FLOATING BUTTON ===== -->
+  <a href="https://wa.me/918218269740?text=Hi%20Dairy%20Royal!%20I%20want%20to%20book%20ice%20cream%20catering."
+    class="whatsapp-float" target="_blank" rel="noopener" aria-label="Contact on WhatsApp">
+    <span>💬</span>
+  </a>
+
+  <script src="script.js"></script>
+
+  <script>
+    // ===== CHATBOT WIDGET LOGIC =====
+    (function () {
+      const toggle = document.getElementById('chatbotToggle');
+      const panel  = document.getElementById('chatbotPanel');
+      const close  = document.getElementById('chatbotClose');
+      const icon   = document.getElementById('chatbotIcon');
+      const label  = document.getElementById('chatbotLabel');
+      let open = false;
+
+      function openChat() {
+        open = true;
+        panel.hidden = false;
+        panel.classList.add('cb-open');
+        icon.textContent = '✕';
+        label.style.display = 'none';
+        toggle.setAttribute('aria-label', 'Close AI Chat');
+      }
+
+      function closeChat() {
+        open = false;
+        panel.classList.remove('cb-open');
+        icon.textContent = '🤖';
+        label.style.display = '';
+        toggle.setAttribute('aria-label', 'Open AI Chat');
+        setTimeout(() => { panel.hidden = true; }, 300);
+      }
+
+      toggle.addEventListener('click', () => open ? closeChat() : openChat());
+      close.addEventListener('click', closeChat);
+
+      // Auto-show label hint after 3s
+      setTimeout(() => {
+        label.classList.add('cb-label-show');
+        setTimeout(() => label.classList.remove('cb-label-show'), 4000);
+      }, 3000);
+    })();
+  </script>
+</body>
+
+</html>
